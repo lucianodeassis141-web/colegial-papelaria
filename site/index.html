@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colegial Papelaria · Oliveira/MG</title>
+<meta name="description" content="Colegial Santa Edwiges Papelaria e Presentes, Oliveira/MG. Impressão, xerox, fotos, plastificação, lista escolar e presentes. Peça pelo WhatsApp e retire pronto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mag:#D23764; --mag-esc:#A8204B; --lar:#DE8637; --lar-cl:#F6B26B;
+  --rosa:#FCEEF2; --creme:#FFF8F1; --tinta:#2B1B26; --cinza:#6E5A66; --linha:#F1DCE3;
+  --verde:#1FA855; --raio:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--tinta);background:#fff;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.12;font-weight:900;letter-spacing:-.01em}
+h2{font-size:clamp(28px,5vw,42px)}
+.sobre{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mag)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;border-radius:999px;padding:15px 24px;font-size:17px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s ease, box-shadow .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-zap{background:var(--verde);color:#fff;box-shadow:0 8px 22px rgba(31,168,85,.28)}
+.btn-mag{background:var(--mag);color:#fff;box-shadow:0 8px 22px rgba(210,55,100,.28)}
+.btn-cl{background:#fff;color:var(--tinta);border:2px solid var(--linha)}
+.ic{width:20px;height:20px;flex:none}
+
+/* topo */
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.topo{display:flex;align-items:center;justify-content:space-between;height:68px}
+.topo img{height:50px;width:auto}
+.topo nav{display:none;gap:26px;font-weight:800;font-size:15px}
+.topo nav a:hover{color:var(--mag)}
+.topo .btn{padding:10px 16px;font-size:15px}
+@media(min-width:900px){.topo nav{display:flex}}
+
+/* abertura */
+.hero{background:linear-gradient(180deg,var(--rosa),#fff 85%);overflow:hidden}
+.hero .wrap{display:grid;gap:28px;padding-top:34px;padding-bottom:46px}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:60px;padding-bottom:70px}}
+.selo{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--linha);border-radius:999px;padding:7px 14px 7px 8px;font-weight:800;font-size:14px;box-shadow:0 4px 14px rgba(210,55,100,.08)}
+.selo .g{width:26px;height:26px;border-radius:50%;background:#fff;display:grid;place-items:center;border:1px solid #eee}
+.estrelas{color:#F4B400;letter-spacing:1px}
+.hero h1{font-size:clamp(36px,7.4vw,62px);margin:18px 0 14px}
+.hero h1 em{font-style:normal;color:var(--mag)}
+.hero p.lead{font-size:19px;color:var(--cinza);max-width:520px;font-weight:600}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.status{display:flex;align-items:center;gap:8px;margin-top:18px;font-weight:800;font-size:15px}
+.ponto{width:10px;height:10px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 4px rgba(31,168,85,.18)}
+.status.fechado .ponto{background:#C0392B;box-shadow:0 0 0 4px rgba(192,57,43,.15)}
+.hero-foto{position:relative}
+.hero-foto .f1{border-radius:28px;aspect-ratio:4/4.4;object-fit:cover;width:100%;box-shadow:0 30px 60px rgba(43,27,38,.18)}
+.hero-foto .card{position:absolute;left:-8px;bottom:22px;background:#fff;border-radius:18px;padding:14px 16px;box-shadow:0 18px 40px rgba(43,27,38,.18);max-width:270px;font-size:14px;font-weight:700}
+.hero-foto .card b{display:block;color:var(--mag);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+@media(min-width:900px){.hero-foto .card{left:-40px}}
+
+/* faixa */
+.faixa{background:var(--tinta);color:#fff}
+.faixa .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.08)}
+.faixa div.item{background:var(--tinta);padding:18px 10px;text-align:center;font-weight:800;font-size:15px}
+.faixa div.item span{display:block;color:var(--lar-cl);font-size:24px;font-weight:900}
+@media(min-width:900px){.faixa .wrap{grid-template-columns:repeat(4,1fr)}}
+
+section.bloco{padding:64px 0}
+.cab{max-width:640px;margin-bottom:30px}
+.cab p{color:var(--cinza);font-weight:600;margin-top:10px;font-size:18px}
+
+/* serviços */
+.servicos{display:grid;gap:14px}
+@media(min-width:700px){.servicos{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.servicos{grid-template-columns:repeat(3,1fr)}}
+.serv{background:var(--creme);border:1px solid #F5E3D2;border-radius:var(--raio);padding:22px;display:flex;flex-direction:column;gap:10px;cursor:pointer;transition:transform .18s ease, box-shadow .18s ease}
+.serv:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(222,134,55,.16)}
+.serv .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#fff;color:var(--mag);box-shadow:0 6px 14px rgba(210,55,100,.12)}
+.serv h3{font-size:21px}
+.serv p{color:var(--cinza);font-size:15.5px;font-weight:600}
+.serv .ir{margin-top:auto;font-weight:900;color:var(--mag);font-size:15px}
+.serv.destaque{background:linear-gradient(135deg,var(--mag),var(--mag-esc));color:#fff;border:0}
+.serv.destaque p{color:#FFE3EC}
+.serv.destaque .ir{color:#fff}
+
+/* como funciona */
+.passos{display:grid;gap:14px;counter-reset:p}
+@media(min-width:900px){.passos{grid-template-columns:repeat(3,1fr)}}
+.passo{border:2px dashed var(--linha);border-radius:var(--raio);padding:22px;position:relative}
+.passo:before{counter-increment:p;content:counter(p);position:absolute;top:-16px;left:20px;width:34px;height:34px;border-radius:50%;background:var(--lar);color:#fff;font-weight:900;display:grid;place-items:center}
+.passo h3{font-size:19px;margin-top:6px}
+.passo p{color:var(--cinza);font-weight:600;font-size:15.5px;margin-top:6px}
+
+/* pedido */
+.pedido-bg{background:var(--rosa)}
+.pedido{display:grid;gap:26px}
+@media(min-width:960px){.pedido{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.form{background:#fff;border-radius:26px;padding:22px;box-shadow:0 20px 50px rgba(210,55,100,.12)}
+.abas{display:flex;gap:8px;background:var(--rosa);padding:6px;border-radius:999px;margin-bottom:18px}
+.abas button{flex:1;border:0;background:transparent;font-family:inherit;font-weight:800;font-size:15px;padding:11px 8px;border-radius:999px;cursor:pointer;color:var(--cinza)}
+.abas button.on{background:#fff;color:var(--mag);box-shadow:0 4px 10px rgba(0,0,0,.06)}
+label{display:block;font-weight:800;font-size:14px;margin:14px 0 6px}
+select,input,textarea{width:100%;font-family:inherit;font-size:16px;font-weight:600;padding:13px 14px;border:2px solid var(--linha);border-radius:14px;background:#fff;color:var(--tinta);outline:none}
+select:focus,input:focus,textarea:focus{border-color:var(--mag)}
+.linha2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{margin:0;font-size:15px;font-weight:700;padding:10px 14px;border:2px solid var(--linha);border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chips input{display:none}
+.chips label.on{border-color:var(--mag);background:var(--rosa);color:var(--mag-esc)}
+.form .btn{width:100%;margin-top:18px}
+.nota{font-size:13.5px;color:var(--cinza);font-weight:600;margin-top:10px}
+.previa-msg{background:#E6F7EC;border-radius:16px;padding:14px;font-size:14.5px;font-weight:600;white-space:pre-wrap;margin-top:14px;border:1px solid #CDEFD9;font-family:inherit}
+.previa-msg b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#13703A;margin-bottom:6px}
+.lado h2{margin-bottom:12px}
+.lado p{color:var(--cinza);font-weight:600;font-size:18px}
+.lado ul{list-style:none;margin-top:18px;display:grid;gap:12px}
+.lado li{display:flex;gap:12px;font-weight:700}
+.lado li i{flex:none;width:26px;height:26px;border-radius:50%;background:#fff;color:var(--verde);display:grid;place-items:center;font-style:normal;font-weight:900}
+.aspas{margin-top:22px;background:#fff;border-left:5px solid var(--lar);border-radius:14px;padding:16px 18px;font-weight:700}
+.aspas small{display:block;color:var(--cinza);font-weight:700;margin-top:6px}
+
+/* produtos */
+.cats{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px;scrollbar-width:none}
+.cats::-webkit-scrollbar{display:none}
+.cats button{flex:none;border:2px solid var(--linha);background:#fff;border-radius:999px;padding:10px 16px;font-family:inherit;font-weight:800;font-size:15px;cursor:pointer;color:var(--cinza)}
+.cats button.on{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.prods{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:900px){.prods{grid-template-columns:repeat(4,1fr)}}
+.prod{border:1px solid var(--linha);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.prod .ilu{aspect-ratio:1;display:grid;place-items:center;background:var(--creme)}
+.prod .ilu svg{width:62%;height:62%}
+.prod .info{padding:12px 12px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.prod h3{font-size:15px;font-weight:800;line-height:1.25}
+.prod .det{font-size:13px;color:var(--cinza);font-weight:600}
+.prod .preco{font-size:20px;font-weight:900;color:var(--mag);margin-top:auto}
+.prod button{margin-top:8px;border:0;background:var(--rosa);color:var(--mag-esc);font-family:inherit;font-weight:800;border-radius:12px;padding:10px;cursor:pointer;font-size:14px}
+.prod.consulta .preco{font-size:15px;color:var(--cinza)}
+
+/* sacola */
+.sacola{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--tinta);color:#fff;border-radius:20px;padding:12px 12px 12px 18px;display:none;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.sacola.on{display:flex}
+.sacola b{font-size:17px}
+.sacola small{display:block;color:#E7CFDA;font-weight:700;font-size:13px}
+.sacola .btn{padding:12px 16px;font-size:15px}
+@media(min-width:900px){.sacola{left:auto;width:420px;right:24px;bottom:24px}}
+
+/* loja */
+.loja{display:grid;gap:12px}
+@media(min-width:900px){.loja{grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:260px 260px}}
+.loja img{width:100%;height:100%;object-fit:cover;border-radius:20px;min-height:220px}
+@media(min-width:900px){.loja .g1{grid-row:span 2}.texto-loja{grid-column:span 2}}
+.loja{grid-template-columns:1fr 1fr}.loja .g1,.texto-loja{grid-column:span 2}
+@media(min-width:900px){.loja{grid-template-columns:1.2fr 1fr 1fr}.loja .g1{grid-column:auto}}
+.texto-loja{background:var(--creme);border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.texto-loja p{font-weight:600;color:var(--cinza)}
+.texto-loja h3{font-size:24px}
+
+/* avaliações */
+.avs{display:grid;gap:12px}
+@media(min-width:900px){.avs{grid-template-columns:repeat(3,1fr)}}
+.av{border:1px solid var(--linha);border-radius:20px;padding:20px;background:#fff}
+.av p{font-weight:700;margin:8px 0 10px}
+.av small{color:var(--cinza);font-weight:700}
+.nota-g{display:flex;align-items:center;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.nota-g .n{font-size:58px;font-weight:900;line-height:1}
+
+/* visita */
+.visita{background:var(--tinta);color:#fff;border-radius:30px;padding:28px;display:grid;gap:24px}
+@media(min-width:900px){.visita{grid-template-columns:1fr 1fr;padding:44px}}
+.visita h2{color:#fff}
+.horas{display:grid;gap:8px;margin-top:6px}
+.horas div{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.1);padding:8px 0;font-weight:700}
+.horas div.hoje{color:var(--lar-cl)}
+.visita .btn-cl{background:transparent;color:#fff;border-color:rgba(255,255,255,.25)}
+.mapa{border-radius:20px;overflow:hidden;min-height:260px;background:#3a2a35}
+.mapa iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+footer{padding:40px 0 110px;text-align:center;color:var(--cinza);font-weight:700;font-size:14px}
+footer img{height:64px;margin:0 auto 12px;width:auto}
+.demo{display:inline-block;margin-top:10px;font-size:12px;background:var(--rosa);color:var(--mag-esc);border-radius:999px;padding:5px 12px;font-weight:800}
+
+.zap-flut{position:fixed;right:16px;bottom:16px;z-index:35;width:60px;height:60px;border-radius:50%;background:var(--verde);display:grid;place-items:center;box-shadow:0 12px 26px rgba(31,168,85,.4)}
+.zap-flut svg{width:32px;height:32px;fill:#fff}
+body.com-sacola .zap-flut{display:none}
+
+.surge{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+.surge.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.surge{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap topo">
+    <a href="#inicio" aria-label="Colegial Papelaria"><img src="assets/logo-colegial.png" alt="Colegial Papelaria e Presentes · Santa Edwiges"></a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#pedido">Fazer pedido</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#loja">A loja</a>
+      <a href="#visita">Como chegar</a>
+    </nav>
+    <a class="btn btn-zap" href="#pedido">
+      <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+      Pedir
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div class="surge">
+      <span class="selo"><span class="g"><svg width="15" height="15" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.7 13.2l7.8 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.6 5.9c4.4-4.1 7-10.1 7-17.6z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.8-6.1a24 24 0 0 0 0 21.6l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg></span>
+        <span class="estrelas">★★★★★</span> 5,0 · 426 avaliações no Google</span>
+      <h1>Manda pelo WhatsApp.<br><em>Quando chegar, já está pronto.</em></h1>
+      <p class="lead">Impressão, xerox, fotos, plastificação e a lista escolar inteira. Você escolhe o serviço aqui, o pedido chega organizado na Colegial e você só passa para buscar.</p>
+      <div class="acoes">
+        <a class="btn btn-mag" href="#pedido">Fazer meu pedido</a>
+        <a class="btn btn-cl" href="#lista">Mandar a lista escolar</a>
+      </div>
+      <div class="status" id="status"><span class="ponto"></span><span id="status-txt">Aberto agora</span></div>
+    </div>
+    <div class="hero-foto surge">
+      <img class="f1" src="assets/interior.jpg" alt="Balcão e vitrine da Colegial Papelaria em Oliveira">
+      <div class="card"><b>Avaliação no Google</b>"Fiz meu pedido pelo WhatsApp, e quando cheguei, já estava tudo impresso e muito bem organizado."</div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa">
+  <div class="wrap">
+    <div class="item"><span>5,0</span>nota no Google</div>
+    <div class="item"><span>426</span>avaliações</div>
+    <div class="item"><span>06:30</span>abre seg a sex</div>
+    <div class="item"><span>Cabrais</span>Oliveira/MG</div>
+  </div>
+</div>
+
+<section class="bloco" id="servicos">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="sobre">Serviços de papelaria</span>
+      <h2>O que você precisa, do jeito que você precisa.</h2>
+      <p>Toque no serviço e monte o pedido. Ele chega pronto no nosso WhatsApp.</p>
+    </div>
+    <div class="servicos">
+      <div class="serv surge" data-serv="Impressão / xerox">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg></div>
+        <h3>Impressão e xerox</h3>
+        <p>Trabalho, apostila, documento, prova. Colorido ou preto e branco, do jeito que você mandar.</p>
+        <span class="ir">Pedir impressão</span>
+      </div>
+      <div class="serv surge" data-serv="Impressão de fotos">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></div>
+        <h3>Impressão de fotos</h3>
+        <p>Manda as fotos do celular e escolhe o tamanho. Cuidamos de cada detalhe.</p>
+        <span class="ir">Pedir fotos</span>
+      </div>
+      <div class="serv surge" data-serv="Plastificação">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5Z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+        <h3>Plastificação</h3>
+        <p>Documento, carteirinha, cardápio, material de sala. Protegido e pronto para usar.</p>
+        <span class="ir">Pedir plastificação</span>
+      </div>
+      <div class="serv surge" data-serv="Caderno personalizado">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M12 7l1.2 2.4 2.6.4-1.9 1.8.5 2.6L12 13l-2.4 1.2.5-2.6-1.9-1.8 2.6-.4Z"/></svg></div>
+        <h3>Cadernos personalizados</h3>
+        <p>Com o nome e o tema que a criança escolher. Feitos aqui, com capricho.</p>
+        <span class="ir">Pedir personalizado</span>
+      </div>
+      <div class="serv surge" data-serv="Encomenda de produto">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+        <h3>Presentes e encomendas</h3>
+        <p>Presentes, brinquedos, casa e cozinha. Separamos e embrulhamos para você buscar.</p>
+        <span class="ir">Encomendar</span>
+      </div>
+      <a class="serv destaque surge" href="#lista">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Lista escolar 2027</h3>
+        <p>Manda a foto da lista e a gente separa tudo. Sem fila, sem procurar item por item.</p>
+        <span class="ir">Mandar minha lista</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" style="padding-top:0">
+  <div class="wrap">
+    <div class="cab surge"><span class="sobre">Como funciona</span><h2>Três passos e pronto.</h2></div>
+    <div class="passos">
+      <div class="passo surge"><h3>Escolha o serviço</h3><p>Impressão, foto, plastificação, personalizado ou a lista escolar.</p></div>
+      <div class="passo surge"><h3>Mande os detalhes</h3><p>Quantidade, tamanho, cor. O pedido abre no WhatsApp já escrito, e o arquivo vai em seguida na mesma conversa.</p></div>
+      <div class="passo surge"><h3>Busque pronto</h3><p>Avisamos quando ficar pronto. Retire na loja ou combine a entrega.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco pedido-bg" id="pedido">
+  <div class="wrap pedido">
+    <div class="lado surge">
+      <span class="sobre">Fazer pedido</span>
+      <h2>Monte seu pedido em 1 minuto.</h2>
+      <p>Nada de mandar mensagem e esperar perguntar de novo. Tudo o que a gente precisa saber vai junto.</p>
+      <ul>
+        <li><i>✓</i>O pedido chega organizado no WhatsApp da Colegial</li>
+        <li><i>✓</i>Você manda o arquivo ou a foto na mesma conversa</li>
+        <li><i>✓</i>Retira na loja ou combina a entrega</li>
+      </ul>
+      <div class="aspas">"Excelente atendimento, rapidez na entrega das impressões!"<small>Avaliação real no Google</small></div>
+    </div>
+
+    <div class="form surge" id="lista">
+      <div class="abas" role="tablist">
+        <button class="on" data-aba="servico" type="button">Serviço</button>
+        <button data-aba="lista" type="button">Lista escolar</button>
+      </div>
+
+      <form id="f-servico">
+        <label for="s-tipo">Serviço</label>
+        <select id="s-tipo">
+          <option>Impressão / xerox</option>
+          <option>Impressão de fotos</option>
+          <option>Plastificação</option>
+          <option>Caderno personalizado</option>
+          <option>Encomenda de produto</option>
+        </select>
+        <div id="s-extra"></div>
+        <label for="s-obs">Observação</label>
+        <textarea id="s-obs" rows="2" placeholder="Ex.: frente e verso, grampear, para amanhã cedo"></textarea>
+        <label>Como prefere receber?</label>
+        <div class="chips" data-grupo="s-receber">
+          <label class="on"><input type="radio" name="s-receber" value="Retiro na loja" checked>Retiro na loja</label>
+          <label><input type="radio" name="s-receber" value="Quero entrega">Quero entrega</label>
+        </div>
+        <label for="s-nome">Seu nome</label>
+        <input id="s-nome" placeholder="Como você se chama?" autocomplete="name">
+        <div class="previa-msg" id="s-previa"></div>
+        <button class="btn btn-zap" type="submit">Enviar pedido pelo WhatsApp</button>
+        <p class="nota">Depois de enviar, é só mandar o arquivo ou as fotos na mesma conversa.</p>
+      </form>
+
+      <form id="f-lista" hidden>
+        <label>Como você quer mandar a lista?</label>
+        <div class="chips" data-grupo="l-modo">
+          <label class="on"><input type="radio" name="l-modo" value="escola" checked>Escolher a escola</label>
+          <label><input type="radio" name="l-modo" value="foto">Mandar a foto</label>
+        </div>
+        <div id="l-pronta">
+          <div class="linha2">
+            <div><label for="l-esc">Escola</label><select id="l-esc"></select></div>
+            <div><label for="l-ser">Série / ano</label><select id="l-ser"></select></div>
+          </div>
+          <p class="nota" style="margin:4px 0 8px">Desmarque o que você já tem em casa.</p>
+          <div class="lista-itens" id="l-itens"></div>
+          <div class="lista-total"><span>Total dos itens com preço</span><b id="l-total">R$ 0,00</b></div>
+          <p class="nota" id="l-semp" style="margin-top:4px"></p>
+        </div>
+        <div id="l-foto" hidden>
+          <label for="l-escola">Escola</label>
+          <input id="l-escola" placeholder="Nome da escola">
+          <label for="l-serie">Série / ano</label>
+          <input id="l-serie" placeholder="Ex.: 3º ano">
+        </div>
+        <label for="l-qtd">Quantos alunos?</label>
+        <select id="l-qtd"><option>1</option><option>2</option><option>3</option><option>4 ou mais</option></select>
+        <style>
+          #f-lista [hidden]{display:none!important}
+          .lista-itens{display:flex;flex-direction:column;gap:6px;max-height:260px;overflow:auto;padding:2px}
+          .lista-itens label{display:flex;align-items:center;gap:10px;margin:0;padding:8px 10px;border:1.5px solid #EED7E1;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;background:#fff}
+          .lista-itens label.fora{opacity:.45;text-decoration:line-through}
+          .lista-itens input{width:auto;margin:0;accent-color:#D23764}
+          .lista-itens .q{color:#8a6b7b;font-weight:700;min-width:28px}
+          .lista-itens .pr{margin-left:auto;white-space:nowrap;font-weight:800}
+          .lista-itens .pr.sem{font-weight:600;color:#8a6b7b;font-size:12px}
+          .lista-total{display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding:10px 12px;border-radius:10px;background:#FCEBF1;font-weight:700}
+          .lista-total b{font-size:20px;color:#D23764}
+        </style>
+        <label id="l-tipo-rot">O que separar?</label>
+        <div class="chips" data-grupo="l-tipo" id="l-tipo-box">
+          <label class="on"><input type="radio" name="l-tipo" value="A lista completa" checked>A lista completa</label>
+          <label><input type="radio" name="l-tipo" value="Só o que eu marcar na foto">Só o que eu marcar</label>
+        </div>
+        <label>Marcas</label>
+        <div class="chips" data-grupo="l-marca">
+          <label class="on"><input type="radio" name="l-marca" value="O que tiver melhor preço" checked>Melhor preço</label>
+          <label><input type="radio" name="l-marca" value="Marcas que a lista pede">Marcas da lista</label>
+        </div>
+        <label for="l-nome">Seu nome</label>
+        <input id="l-nome" placeholder="Como você se chama?" autocomplete="name">
+        <div class="previa-msg" id="l-previa"></div>
+        <button class="btn btn-zap" type="submit">Mandar a lista pelo WhatsApp</button>
+        <p class="nota" id="l-nota">A lista chega pronta na Colegial. A gente separa e confirma o valor final antes de fechar.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" id="produtos">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="sobre">Produtos</span>
+      <h2>Papelaria, presentes e muito mais.</h2>
+      <p>Alguns itens do nosso catálogo. Coloque na sacola e o pedido vai pronto para o WhatsApp.</p>
+    </div>
+    <div class="cats" id="cats"></div>
+    <div class="prods" id="prods"></div>
+  </div>
+</section>
+
+<section class="bloco" id="loja" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cab surge"><span class="sobre">A loja</span><h2>Vem conhecer a Colegial.</h2></div>
+    <div class="loja">
+      <img class="g1 surge" src="assets/fachada.jpg" alt="Fachada da Colegial Papelaria na Alameda Nossa Sra. de Fátima, 284">
+      <img class="surge" src="assets/parede.jpg" alt="Parede de lápis de cor e canetas na Colegial">
+      <img class="surge" src="assets/flavio-loja.jpg" alt="Flávio na Colegial Papelaria" style="object-position:center 20%">
+      <div class="texto-loja surge">
+        <h3>Qualidade, variedade e atendimento que fazem a diferença.</h3>
+        <p>Material escolar e de escritório, presentes, brinquedos e artigos para casa e cozinha. E os serviços de papelaria que a cidade já conhece: impressão, xerox, fotos e plastificação.</p>
+        <p><b>Alameda Nossa Sra. de Fátima, 284 · Cabrais · Oliveira/MG</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" id="avaliacoes" style="padding-top:20px">
+  <div class="wrap">
+    <div class="nota-g surge">
+      <div class="n">5,0</div>
+      <div><div class="estrelas" style="font-size:24px">★★★★★</div><b>426 avaliações no Google</b></div>
+    </div>
+    <div class="avs">
+      <div class="av surge"><span class="estrelas">★★★★★</span><p>"A Colegial Santa Edwiges é, sem dúvida, a melhor papelaria de Oliveira. O atendimento é sempre excelente."</p><small>Marco Antônio · Google</small></div>
+      <div class="av surge"><span class="estrelas">★★★★★</span><p>"Pedi uma impressão de algumas fotos e me surpreendi: trabalho impecável, rápido e super personalizado."</p><small>Avaliação no Google</small></div>
+      <div class="av surge"><span class="estrelas">★★★★★</span><p>"Sempre com um sorriso largo no rosto e simpatia, poder ser recebida e atendida pelo Flávio."</p><small>Mayra · Google</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" id="visita" style="padding-top:10px">
+  <div class="wrap">
+    <div class="visita surge">
+      <div>
+        <span class="sobre" style="color:var(--lar-cl)">Visite a loja</span>
+        <h2 style="margin:8px 0 6px">Alameda Nossa Sra. de Fátima, 284</h2>
+        <p style="color:#E7CFDA;font-weight:700">Cabrais · Oliveira/MG · 35540-000</p>
+        <div class="horas" id="horas"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+          <a class="btn btn-zap" id="zap-visita" href="#">Chamar no WhatsApp</a>
+          <a class="btn btn-cl" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Colegial+Santa+Edwiges+Papelaria+e+Presentes,+Alameda+Nossa+Sra.+de+F%C3%A1tima,+284,+Oliveira+-+MG">Como chegar</a>
+        </div>
+      </div>
+      <div class="mapa"><iframe loading="lazy" title="Mapa da Colegial Papelaria" src="https://www.google.com/maps?q=Colegial+Santa+Edwiges+Papelaria+e+Presentes,+Oliveira+MG&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/logo-colegial.png" alt="">
+  Colegial Santa Edwiges Papelaria e Presentes · Oliveira/MG<br>(37) 99834-2633
+  <div><span class="demo">Site em demonstração · preparado pela Orion Digitalize</span></div>
+</footer>
+
+<a class="zap-flut" id="zap-flut" href="#" aria-label="Falar com a Colegial no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg></a>
+
+<div class="sacola" id="sacola">
+  <div><b id="sac-total">R$ 0,00</b><small id="sac-itens">0 itens na sacola</small></div>
+  <a class="btn btn-zap" id="sac-enviar" href="#">Pedir no WhatsApp</a>
+</div>
+
+<script>
+const ZAP = '553798342633';
+const wa = (txt) => 'https://wa.me/' + ZAP + '?text=' + encodeURIComponent(txt);
+const brl = (v) => v.toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+
+/* horário e "aberto agora" (horário de Brasília) */
+const HORAS = [ [null,null], ['06:30','18:30'], ['06:30','18:30'], ['06:30','18:30'], ['06:30','18:30'], ['06:30','18:30'], ['08:00','12:00'] ];
+const DIAS = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+function agoraBR(){ const p = new Intl.DateTimeFormat('pt-BR',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()); const h=+p.find(x=>x.type==='hour').value, m=+p.find(x=>x.type==='minute').value; const d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'})).getDay(); return {d, min:h*60+m}; }
+const toMin = (s) => +s.slice(0,2)*60 + +s.slice(3);
+const hf = (s) => s.replace(':00','h').replace(':','h');
+(function(){
+  const {d,min} = agoraBR(); const [a,f] = HORAS[d];
+  const aberto = a && min>=toMin(a) && min<toMin(f);
+  const st = document.getElementById('status'), tx = document.getElementById('status-txt');
+  if(aberto){ tx.textContent = 'Aberto agora · fecha às ' + hf(f); }
+  else { st.classList.add('fechado'); let n=d, txt=''; for(let i=1;i<=7;i++){ const k=(d+i)%7; if(HORAS[k][0]){ n=k; break; } } if(a && min<toMin(a)) txt='abre hoje às '+hf(a); else txt='abre '+(n===(d+1)%7?'amanhã':DIAS[n].toLowerCase())+' às '+hf(HORAS[n][0]); tx.textContent='Fechado agora · '+txt+'. Pode mandar o pedido!'; }
+  const box = document.getElementById('horas');
+  [1,2,3,4,5,6,0].forEach(k=>{ const r=document.createElement('div'); if(k===d) r.className='hoje'; r.innerHTML='<span>'+DIAS[k]+'</span><span>'+(HORAS[k][0]? hf(HORAS[k][0])+' às '+hf(HORAS[k][1]) : 'Fechado')+'</span>'; box.appendChild(r); });
+})();
+document.getElementById('zap-flut').href = wa('Olá, Colegial! Vim pelo site.');
+document.getElementById('zap-visita').href = wa('Olá, Colegial! Vim pelo site.');
+
+/* chips */
+document.querySelectorAll('.chips').forEach(g => g.addEventListener('change', () => { g.querySelectorAll('label').forEach(l => l.classList.toggle('on', l.querySelector('input').checked)); atualizar(); }));
+
+/* abas */
+document.querySelectorAll('.abas button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.abas button').forEach(x => x.classList.toggle('on', x===b));
+  document.getElementById('f-servico').hidden = b.dataset.aba!=='servico';
+  document.getElementById('f-lista').hidden = b.dataset.aba!=='lista';
+  atualizar();
+}));
+document.querySelectorAll('a[href="#lista"]').forEach(a => a.addEventListener('click', () => document.querySelector('.abas [data-aba="lista"]').click()));
+
+/* campos por serviço */
+const EXTRAS = {
+  'Impressão / xerox': `<div class="linha2"><div><label for="x1">Cópias</label><input id="x1" type="number" min="1" value="1"></div><div><label for="x2">Cor</label><select id="x2"><option>Preto e branco</option><option>Colorido</option></select></div></div><label for="x3">Papel</label><select id="x3"><option>A4</option><option>Ofício</option><option>A3</option><option>Outro (explico na observação)</option></select>`,
+  'Impressão de fotos': `<div class="linha2"><div><label for="x1">Quantas fotos?</label><input id="x1" type="number" min="1" value="10"></div><div><label for="x2">Tamanho</label><select id="x2"><option>10x15</option><option>13x18</option><option>15x21</option><option>3x4</option><option>Outro</option></select></div></div>`,
+  'Plastificação': `<div class="linha2"><div><label for="x1">Quantas peças?</label><input id="x1" type="number" min="1" value="1"></div><div><label for="x2">Tamanho</label><select id="x2"><option>Documento / RG</option><option>A4</option><option>Ofício</option><option>Outro</option></select></div></div>`,
+  'Caderno personalizado': `<div class="linha2"><div><label for="x1">Quantos?</label><input id="x1" type="number" min="1" value="1"></div><div><label for="x2">Nome na capa</label><input id="x2" placeholder="Ex.: Laura"></div></div><label for="x3">Tema</label><input id="x3" placeholder="Ex.: Frozen, futebol, floral">`,
+  'Encomenda de produto': `<label for="x1">O que você procura?</label><input id="x1" placeholder="Ex.: presente para professora, até R$ 50">`
+};
+const tipo = document.getElementById('s-tipo');
+function montarExtra(){ document.getElementById('s-extra').innerHTML = EXTRAS[tipo.value]; document.querySelectorAll('#s-extra input,#s-extra select').forEach(e=>e.addEventListener('input',atualizar)); atualizar(); }
+tipo.addEventListener('change', montarExtra);
+document.querySelectorAll('.serv[data-serv]').forEach(c => c.addEventListener('click', () => { tipo.value = c.dataset.serv; document.querySelector('.abas [data-aba="servico"]').click(); montarExtra(); document.getElementById('pedido').scrollIntoView({behavior:'smooth'}); }));
+['s-obs','s-nome','l-escola','l-serie','l-qtd','l-nome'].forEach(id => document.getElementById(id).addEventListener('input', atualizar));
+
+const val = (id) => (document.getElementById(id)?.value || '').trim();
+const radio = (n) => document.querySelector('input[name="'+n+'"]:checked').value;
+function msgServico(){
+  const t = tipo.value; const L = ['Olá, Colegial! Pedido pelo site:', '', '*'+t+'*'];
+  if(t==='Impressão / xerox') L.push(val('x1')+' cópia(s) · '+val('x2')+' · papel '+val('x3'));
+  if(t==='Impressão de fotos') L.push(val('x1')+' foto(s) · tamanho '+val('x2'));
+  if(t==='Plastificação') L.push(val('x1')+' peça(s) · '+val('x2'));
+  if(t==='Caderno personalizado') L.push(val('x1')+' caderno(s) · nome: '+(val('x2')||'a combinar')+' · tema: '+(val('x3')||'a combinar'));
+  if(t==='Encomenda de produto') L.push('Procuro: '+(val('x1')||'vou explicar aqui'));
+  if(val('s-obs')) L.push('Obs.: '+val('s-obs'));
+  L.push(radio('s-receber')); L.push(''); L.push('Nome: '+(val('s-nome')||'—'));
+  if(t!=='Encomenda de produto') L.push('', 'Vou mandar o arquivo aqui em seguida.');
+  return L.join('\n');
+}
+/* lista escolar por escola · DEMONSTRAÇÃO: escola e itens de exemplo.
+   Na versão real, cada escola e série entra com a lista que a Colegial mandar.
+   Preço só nos itens do catálogo do WhatsApp da loja (14/11/2026); o resto mostra "valor na loja". */
+const LISTAS = {
+  'Escola exemplo (demonstração)': {
+    '3º ano': [
+      {n:'Caneta BIC Azul', q:2, p:2.10}, {n:'Caneta BIC Vermelha', q:1, p:2.10},
+      {n:'Lapiseira CIS Fun 0.7 mm', q:1, p:5.90}, {n:'Lápis 12 cores Faber-Castell', q:1, p:21.90},
+      {n:'Caderno universitário 10 matérias', q:1, p:null}, {n:'Caderno de desenho', q:1, p:null},
+      {n:'Borracha branca', q:2, p:null}, {n:'Apontador com depósito', q:1, p:null},
+      {n:'Cola branca 90 g', q:1, p:null}, {n:'Tesoura sem ponta', q:1, p:null}
+    ],
+    '6º ano': [
+      {n:'Caneta BIC Azul', q:3, p:2.10}, {n:'Caneta BIC Preta', q:2, p:2.10}, {n:'Caneta BIC Vermelha', q:1, p:2.10},
+      {n:'Lapiseira Tecno CIS 0.7 mm', q:1, p:9.90}, {n:'Kit 12 cores Faber-Castell', q:1, p:35.90},
+      {n:'Caderno universitário 10 matérias', q:2, p:null}, {n:'Régua 30 cm', q:1, p:null},
+      {n:'Calculadora simples', q:1, p:null}, {n:'Marca-texto', q:2, p:null}
+    ]
+  }
+};
+const lEsc = document.getElementById('l-esc'), lSer = document.getElementById('l-ser'), lItens = document.getElementById('l-itens');
+Object.keys(LISTAS).forEach(e => lEsc.add(new Option(e)));
+function montarSeries(){ lSer.innerHTML=''; Object.keys(LISTAS[lEsc.value]).forEach(s => lSer.add(new Option(s))); montarItens(); }
+function montarItens(){
+  lItens.innerHTML = LISTAS[lEsc.value][lSer.value].map((it,i) =>
+    `<label><input type="checkbox" data-i="${i}" checked><span class="q">${it.q}x</span>${it.n}<span class="pr${it.p==null?' sem':''}">${it.p==null?'valor na loja':brl(it.p*it.q)}</span></label>`).join('');
+  lItens.querySelectorAll('input').forEach(c => c.addEventListener('change', () => { c.parentElement.classList.toggle('fora', !c.checked); atualizar(); }));
+  atualizar();
+}
+lEsc.addEventListener('change', montarSeries); lSer.addEventListener('change', montarItens);
+const modoLista = () => radio('l-modo');
+function itensMarcados(){ const L = LISTAS[lEsc.value][lSer.value]; return [...lItens.querySelectorAll('input:checked')].map(c => L[+c.dataset.i]); }
+function totalLista(){
+  const m = itensMarcados(), k = /^\d+$/.test(val('l-qtd')) ? +val('l-qtd') : 1;
+  return { t: m.filter(x=>x.p!=null).reduce((s,x)=>s+x.p*x.q,0)*k, sem: m.filter(x=>x.p==null).length };
+}
+document.querySelector('.chips[data-grupo="l-modo"]').addEventListener('change', () => {
+  const foto = modoLista()==='foto';
+  document.getElementById('l-pronta').hidden = foto; document.getElementById('l-foto').hidden = !foto;
+  document.getElementById('l-tipo-rot').hidden = !foto; document.getElementById('l-tipo-box').hidden = !foto;
+  document.getElementById('l-nota').textContent = foto ? 'Na conversa, mande a foto da lista. A gente separa e avisa o valor antes de fechar.' : 'A lista chega pronta na Colegial. A gente separa e confirma o valor final antes de fechar.';
+});
+function msgLista(){
+  if(modoLista()==='foto') return ['Olá, Colegial! Quero que vocês separem a lista escolar:', '', 'Escola: '+(val('l-escola')||'—'), 'Série: '+(val('l-serie')||'—'), 'Alunos: '+val('l-qtd'), radio('l-tipo'), 'Marcas: '+radio('l-marca'), '', 'Nome: '+(val('l-nome')||'—'), '', 'Vou mandar a foto da lista aqui em seguida.'].join('\n');
+  const {t,sem} = totalLista();
+  const L = ['Olá, Colegial! Lista escolar pelo site:', '', '*'+lEsc.value+' · '+lSer.value+'*', 'Alunos: '+val('l-qtd'), ''];
+  itensMarcados().forEach(x => L.push('• '+x.q+'x '+x.n));
+  L.push('', 'Marcas: '+radio('l-marca'), 'Total dos itens com preço: '+brl(t)+(sem?' (+ '+sem+' item(ns) com valor na loja)':''), '', 'Nome: '+(val('l-nome')||'—'));
+  return L.join('\n');
+}
+function atualizar(){
+  document.getElementById('s-previa').innerHTML = '<b>Mensagem que vai chegar na Colegial</b>' + msgServico().replace(/</g,'&lt;');
+  document.getElementById('l-previa').innerHTML = '<b>Mensagem que vai chegar na Colegial</b>' + msgLista().replace(/</g,'&lt;');
+  if(lItens.children.length){ const {t,sem} = totalLista(); document.getElementById('l-total').textContent = brl(t); document.getElementById('l-semp').textContent = sem ? '+ '+sem+' item(ns) com valor confirmado na loja. Lista de exemplo, em demonstração.' : 'Lista de exemplo, em demonstração.'; }
+}
+document.getElementById('f-servico').addEventListener('submit', e => { e.preventDefault(); window.open(wa(msgServico()), '_blank'); });
+document.getElementById('f-lista').addEventListener('submit', e => { e.preventDefault(); window.open(wa(msgLista()), '_blank'); });
+montarExtra();
+montarSeries();
+document.getElementById('l-qtd').addEventListener('change', atualizar);
+document.getElementById('l-tipo-rot').hidden = true; document.getElementById('l-tipo-box').hidden = true;
+
+/* produtos: itens e preços do catálogo do WhatsApp da loja (14/11/2026) */
+const SVG = {
+  caneta: c => `<svg viewBox="0 0 100 100"><g transform="rotate(-40 50 50)"><rect x="44" y="8" width="12" height="70" rx="5" fill="#fff" stroke="#2B1B26" stroke-width="2.5"/><rect x="44" y="8" width="12" height="16" rx="5" fill="${c}"/><path d="M44 78 L50 94 L56 78Z" fill="#EEE" stroke="#2B1B26" stroke-width="2.5"/><circle cx="50" cy="92" r="2" fill="${c}"/><rect x="55" y="12" width="4" height="26" rx="2" fill="${c}"/></g></svg>`,
+  lapiseira: c => `<svg viewBox="0 0 100 100"><g transform="rotate(-40 50 50)"><rect x="44" y="6" width="12" height="72" rx="6" fill="${c}" stroke="#2B1B26" stroke-width="2.5"/><rect x="44" y="40" width="12" height="16" fill="#2B1B26" opacity=".25"/><path d="M45 78 L50 92 L55 78Z" fill="#C9C9C9" stroke="#2B1B26" stroke-width="2.5"/><rect x="49" y="92" width="2" height="5" fill="#2B1B26"/></g></svg>`,
+  lapis: () => `<svg viewBox="0 0 100 100">${['#D23764','#DE8637','#F4C430','#2EAA5C','#2F80ED','#8E44AD'].map((c,i)=>`<g transform="translate(${18+i*12} ${10+(i%2)*6})"><rect width="9" height="62" rx="2" fill="${c}" stroke="#2B1B26" stroke-width="1.6"/><path d="M0 62 L4.5 76 L9 62Z" fill="#F3D9B1" stroke="#2B1B26" stroke-width="1.6"/><path d="M3 71 L4.5 76 L6 71Z" fill="${c}"/></g>`).join('')}</svg>`,
+  kit: () => `<svg viewBox="0 0 100 100"><rect x="14" y="20" width="56" height="62" rx="6" fill="#fff" stroke="#2B1B26" stroke-width="2.5"/>${['#D23764','#DE8637','#2EAA5C','#2F80ED'].map((c,i)=>`<rect x="${22+i*11}" y="28" width="7" height="46" rx="2" fill="${c}"/>`).join('')}<rect x="66" y="56" width="22" height="13" rx="4" fill="#F7B6C8" stroke="#2B1B26" stroke-width="2.5"/><rect x="70" y="72" width="16" height="12" rx="3" fill="#2F80ED" stroke="#2B1B26" stroke-width="2.5"/></svg>`,
+  presente: () => `<svg viewBox="0 0 100 100"><rect x="20" y="40" width="60" height="44" rx="5" fill="#D23764" stroke="#2B1B26" stroke-width="2.5"/><rect x="15" y="30" width="70" height="14" rx="4" fill="#E9577F" stroke="#2B1B26" stroke-width="2.5"/><rect x="46" y="30" width="8" height="54" fill="#DE8637"/><path d="M50 30 C38 14 26 22 34 30 M50 30 C62 14 74 22 66 30" fill="none" stroke="#DE8637" stroke-width="5" stroke-linecap="round"/></svg>`,
+  brinquedo: () => `<svg viewBox="0 0 100 100"><circle cx="50" cy="56" r="26" fill="#DE8637" stroke="#2B1B26" stroke-width="2.5"/><circle cx="30" cy="32" r="10" fill="#DE8637" stroke="#2B1B26" stroke-width="2.5"/><circle cx="70" cy="32" r="10" fill="#DE8637" stroke="#2B1B26" stroke-width="2.5"/><circle cx="41" cy="52" r="3.5" fill="#2B1B26"/><circle cx="59" cy="52" r="3.5" fill="#2B1B26"/><ellipse cx="50" cy="64" rx="9" ry="7" fill="#FCE3CC" stroke="#2B1B26" stroke-width="2"/><circle cx="50" cy="61" r="2.6" fill="#2B1B26"/></svg>`,
+  casa: () => `<svg viewBox="0 0 100 100"><path d="M22 44 h56 v8 a28 28 0 0 1 -56 0z" fill="#fff" stroke="#2B1B26" stroke-width="2.5"/><path d="M78 50 h8 a6 6 0 0 1 0 12 h-10" fill="none" stroke="#2B1B26" stroke-width="2.5"/><path d="M40 36 c-4 -6 4 -10 0 -18 M52 36 c-4 -6 4 -10 0 -18" fill="none" stroke="#D23764" stroke-width="3" stroke-linecap="round"/><rect x="30" y="56" width="40" height="5" rx="2" fill="#DE8637"/></svg>`,
+  escritorio: () => `<svg viewBox="0 0 100 100"><rect x="22" y="14" width="50" height="70" rx="5" fill="#fff" stroke="#2B1B26" stroke-width="2.5"/><rect x="30" y="10" width="34" height="12" rx="4" fill="#DE8637" stroke="#2B1B26" stroke-width="2.5"/><path d="M32 38h30M32 50h30M32 62h20" stroke="#D23764" stroke-width="3" stroke-linecap="round"/><path d="M62 84 l18 -30 6 4 -18 30 -8 3z" fill="#F4C430" stroke="#2B1B26" stroke-width="2.5"/></svg>`
+};
+const PRODUTOS = [
+  {c:'Escolar', n:'Caneta BIC Azul', d:'Ponta média 1.0 mm', p:2.10, s:SVG.caneta('#1E5BC6')},
+  {c:'Escolar', n:'Caneta BIC Preta', d:'Ponta média 1.0 mm', p:2.10, s:SVG.caneta('#222')},
+  {c:'Escolar', n:'Caneta BIC Vermelha', d:'Ponta média 1.0 mm', p:2.10, s:SVG.caneta('#D0312D')},
+  {c:'Escolar', n:'Lapiseira Tecno CIS 0.7 mm', d:'Tons metálicos · unidade', p:9.90, s:SVG.lapiseira('#8A9BB0')},
+  {c:'Escolar', n:'Lapiseira CIS Neon 0.7 mm', d:'Unidade', p:9.00, s:SVG.lapiseira('#B6F23A')},
+  {c:'Escolar', n:'Lapiseira CIS Fun 0.7 mm', d:'Unidade', p:5.90, s:SVG.lapiseira('#FF7AB6')},
+  {c:'Escolar', n:'Lápis 12 cores Faber-Castell', d:'Sextavado EcoLápis', p:21.90, s:SVG.lapis()},
+  {c:'Escolar', n:'Kit 12 cores Faber-Castell', d:'+ borracha, apontador e 2 EcoLápis grafite', p:35.90, s:SVG.kit()},
+  {c:'Presentes', n:'Presentes', d:'Para aniversário, professora, datas especiais', p:null, s:SVG.presente()},
+  {c:'Brinquedos', n:'Brinquedos', d:'Para todas as idades', p:null, s:SVG.brinquedo()},
+  {c:'Casa e cozinha', n:'Casa e cozinha', d:'Utilidades e presentes para a casa', p:null, s:SVG.casa()},
+  {c:'Escritório', n:'Escritório', d:'Pastas, papel, organização', p:null, s:SVG.escritorio()}
+];
+const CATS = ['Tudo','Escolar','Escritório','Presentes','Brinquedos','Casa e cozinha'];
+const sacola = {};
+let cat = 'Tudo';
+function desenharProdutos(){
+  document.getElementById('cats').innerHTML = CATS.map(c=>`<button class="${c===cat?'on':''}" data-c="${c}">${c}</button>`).join('');
+  document.querySelectorAll('#cats button').forEach(b=>b.onclick=()=>{cat=b.dataset.c;desenharProdutos();});
+  document.getElementById('prods').innerHTML = PRODUTOS.map((p,i)=>({p,i})).filter(({p})=>cat==='Tudo'||p.c===cat).map(({p,i})=>`
+    <div class="prod ${p.p?'':'consulta'}"><div class="ilu">${p.s}</div><div class="info"><h3>${p.n}</h3><div class="det">${p.d}</div>
+    <div class="preco">${p.p? brl(p.p) : 'Consulte na loja'}</div>
+    ${p.p? `<button data-i="${i}">${sacola[i]? 'Na sacola: '+sacola[i]+' · +1' : 'Colocar na sacola'}</button>` : `<button data-q="${i}">Perguntar no WhatsApp</button>`}</div></div>`).join('');
+  document.querySelectorAll('#prods button[data-i]').forEach(b=>b.onclick=()=>{ const i=+b.dataset.i; sacola[i]=(sacola[i]||0)+1; desenharProdutos(); desenharSacola(); });
+  document.querySelectorAll('#prods button[data-q]').forEach(b=>b.onclick=()=>window.open(wa('Olá, Colegial! Vi no site e queria saber de '+PRODUTOS[+b.dataset.q].n.toLowerCase()+'.'),'_blank'));
+}
+function desenharSacola(){
+  const ids = Object.keys(sacola); const qtd = ids.reduce((s,i)=>s+sacola[i],0); const tot = ids.reduce((s,i)=>s+sacola[i]*PRODUTOS[i].p,0);
+  document.getElementById('sacola').classList.toggle('on', qtd>0); document.body.classList.toggle('com-sacola', qtd>0);
+  document.getElementById('sac-total').textContent = brl(tot);
+  document.getElementById('sac-itens').textContent = qtd + (qtd===1?' item':' itens') + ' na sacola';
+  const L = ['Olá, Colegial! Quero separar pelo site:', ''].concat(ids.map(i=>sacola[i]+'x '+PRODUTOS[i].n+' · '+brl(sacola[i]*PRODUTOS[i].p)), ['', 'Total: '+brl(tot), 'Retiro na loja.']);
+  document.getElementById('sac-enviar').href = wa(L.join('\n'));
+  document.getElementById('sac-enviar').target = '_blank';
+}
+desenharProdutos();
+
+/* animação de entrada */
+const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.surge').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

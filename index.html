@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colegial Papelaria · prévia Orion</title>
+<meta name="description" content="Apresentação da Orion Digitalize para a Colegial Santa Edwiges Papelaria e Presentes: site de pedidos, ficha do Google e painel, em demonstração.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orion:#AD3AE0; --orion-esc:#7B1FB0; --orion-cl:#F4E8FB;
+  --col:#D23764; --col-lar:#DE8637;
+  --tinta:#16121D; --cinza:#5E5868; --linha:#ECE7F1; --fundo:#FBFAFD;
+  --verde:#1FA855;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',system-ui,sans-serif;color:var(--tinta);background:#fff;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.bg{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;line-height:1.06}
+h2{font-size:clamp(30px,5.4vw,50px);font-weight:800}
+h2 em,h1 em{font-style:normal;color:var(--orion)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orion)}
+.num{font-family:'Bricolage Grotesque';font-weight:800;color:var(--orion);font-size:15px;letter-spacing:.1em}
+.btn{display:inline-flex;align-items:center;gap:10px;justify-content:center;font-weight:700;border-radius:999px;padding:14px 22px;font-size:16px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-o{background:var(--orion);color:#fff;box-shadow:0 10px 24px rgba(173,58,224,.3)}
+.btn-l{background:#fff;border:2px solid var(--linha);color:var(--tinta)}
+.btn-z{background:var(--verde);color:#fff;box-shadow:0 10px 24px rgba(31,168,85,.3)}
+.selo-demo{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;background:#FFF4E5;color:#9A5A00;border:1px solid #FBE0B8;border-radius:999px;padding:5px 12px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--linha)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px}
+.marca img{height:40px;width:auto}
+.marca .x{color:var(--cinza)}
+.nav nav{display:none;gap:22px;font-weight:600;font-size:14.5px}
+.nav nav a:hover{color:var(--orion)}
+.nav .btn{padding:10px 16px;font-size:14px}
+@media(min-width:960px){.nav nav{display:flex}}
+
+/* hero */
+.hero{background:radial-gradient(1000px 500px at 85% 10%,#F6E6FE,transparent 70%),radial-gradient(700px 400px at 0% 100%,#FDEAF0,transparent 70%)}
+.hero .wrap{display:grid;gap:36px;padding-top:42px;padding-bottom:60px}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;padding-top:70px;padding-bottom:90px}}
+.hero h1{font-size:clamp(42px,8vw,78px);font-weight:800;margin:16px 0}
+.hero h1 small{display:block;font-size:.42em;color:var(--cinza);font-weight:700;margin-top:10px;letter-spacing:-.01em}
+.hero p{color:var(--cinza);font-size:18px;max-width:560px}
+.hero .acoes{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}
+.prep{display:flex;gap:12px;align-items:center;font-size:14px;color:var(--cinza)}
+.prep img{width:52px;height:52px;border-radius:14px;background:#fff;border:1px solid var(--linha);object-fit:contain;padding:4px}
+
+/* celular */
+.cel{width:300px;height:620px;border-radius:46px;background:#111;padding:12px;box-shadow:0 40px 80px rgba(22,18,29,.28),inset 0 0 0 2px #333;position:relative;margin:0 auto;flex:none}
+.cel:before{content:"";position:absolute;top:20px;left:50%;transform:translateX(-50%);width:90px;height:24px;border-radius:20px;background:#111;z-index:3}
+.cel .tela{width:100%;height:100%;border-radius:36px;overflow:hidden;background:#fff;position:relative}
+.cel iframe{width:390px;height:821px;border:0;transform:scale(.7077);transform-origin:0 0}
+.cel-leg{text-align:center;font-size:13px;color:var(--cinza);margin-top:14px;font-weight:600}
+
+section.s{padding:84px 0;border-top:1px solid var(--linha)}
+.cab{max-width:720px;margin-bottom:38px}
+.cab p{color:var(--cinza);margin-top:12px;font-size:18px}
+
+/* achados */
+.achados{display:grid;gap:14px}
+@media(min-width:900px){.achados{grid-template-columns:repeat(4,1fr)}}
+.ach{background:var(--fundo);border:1px solid var(--linha);border-radius:22px;padding:22px}
+.ach .bg{font-size:40px;font-weight:800;color:var(--tinta)}
+.ach .bg small{font-size:18px;color:var(--cinza)}
+.ach p{color:var(--cinza);font-size:15px;margin-top:6px}
+.ach.forte{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.ach.forte p{color:#CFC6DA}
+.ach q{display:block;font-weight:600;font-size:16px;color:var(--tinta);quotes:"\201C" "\201D"}
+.ach .fonte{display:block;font-size:12.5px;color:var(--cinza);margin-top:10px;font-weight:600}
+.leitura{margin-top:26px;background:linear-gradient(135deg,var(--orion),var(--orion-esc));color:#fff;border-radius:24px;padding:26px;font-size:19px;font-weight:500}
+.leitura b{font-weight:700}
+
+/* instagram */
+.duas{display:grid;gap:40px;align-items:center}
+@media(min-width:960px){.duas{grid-template-columns:auto 1fr;gap:70px}}
+.ig{padding:44px 14px 14px;font-size:12px;height:100%;overflow:hidden;background:#fff}
+.ig .top{display:flex;align-items:center;gap:14px}
+.ig .top img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:1px solid #eee}
+.ig .nums{display:flex;gap:12px;flex:1;justify-content:space-around;text-align:center}
+.ig .nums b{display:block;font-size:14px}
+.ig .bio{margin-top:10px;line-height:1.4}
+.ig .bio b{font-size:12.5px}
+.ig .bio .lk{color:#00376B;font-weight:600}
+.ig .bts{display:flex;gap:6px;margin-top:10px}
+.ig .bts span{flex:1;text-align:center;background:#EFEFEF;border-radius:8px;padding:6px;font-weight:600}
+.ig .bts span.az{background:#0095F6;color:#fff}
+.ig .grade{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin:12px -14px 0}
+.ig .grade img{aspect-ratio:1;object-fit:cover;width:100%}
+.lista-ok{list-style:none;display:grid;gap:12px;margin-top:20px}
+.lista-ok li{display:flex;gap:12px;align-items:flex-start}
+.lista-ok li i{flex:none;width:24px;height:24px;border-radius:50%;background:var(--orion-cl);color:var(--orion);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:13px;margin-top:2px}
+.aviso{margin-top:22px;border-left:4px solid var(--col-lar);background:#FFF8F1;border-radius:12px;padding:14px 16px;font-size:15.5px}
+
+/* site */
+.site-area{display:grid;gap:40px;align-items:start}
+@media(min-width:1060px){.site-area{grid-template-columns:auto 1fr}}
+.pc{border-radius:16px;overflow:hidden;border:1px solid var(--linha);box-shadow:0 30px 60px rgba(22,18,29,.14);background:#fff}
+.pc .barra{height:38px;background:#F3F1F6;display:flex;align-items:center;gap:7px;padding:0 14px}
+.pc .barra i{width:11px;height:11px;border-radius:50%;background:#DDD7E3}
+.pc .barra span{margin-left:12px;background:#fff;border-radius:8px;padding:4px 14px;font-size:12.5px;color:var(--cinza);flex:1;max-width:340px}
+.pc .vista{position:relative;overflow:hidden;height:520px}
+.pc iframe{border:0;width:1366px;height:1100px;transform-origin:0 0;position:absolute;top:0;left:0}
+.dest{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.dest span{background:var(--fundo);border:1px solid var(--linha);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
+.abrir{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+
+/* google */
+.gg{display:grid;gap:22px}
+@media(min-width:960px){.gg{grid-template-columns:1fr 1fr}}
+.ficha{border:1px solid var(--linha);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 16px 40px rgba(22,18,29,.08)}
+.ficha .rot{padding:10px 18px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--fundo);border-bottom:1px solid var(--linha);display:flex;justify-content:space-between;align-items:center}
+.ficha.nova .rot{background:#EFFAF3;color:#13703A}
+.fotos{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:150px;gap:3px;height:150px;overflow:hidden}
+.fotos img{width:100%;height:100%;object-fit:cover}
+.ficha .corpo{padding:18px}
+.ficha h3{font-family:Arial,sans-serif;font-size:22px;font-weight:400;letter-spacing:0}
+.ficha .nt{display:flex;gap:6px;align-items:center;font-size:14px;margin:4px 0}
+.ficha .nt .e{color:#F4B400}
+.ficha .cat{color:#70757A;font-size:14px}
+.gbts{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.gbts span{border:1px solid #DADCE0;border-radius:999px;padding:7px 13px;font-size:13px;color:#1A73E8;font-weight:600}
+.gbts span.az{background:#1A73E8;color:#fff;border-color:#1A73E8}
+.gl{display:grid;gap:10px;font-size:14px;border-top:1px solid #EEE;padding-top:12px}
+.gl>div{display:grid;grid-template-columns:96px 1fr;gap:10px}
+.gl>div>b{color:#70757A;font-weight:500}
+.falta{color:#C5221F;font-weight:600}
+.novo{color:#13703A;font-weight:600}
+.tag{display:inline-block;font-size:11px;font-weight:700;background:#E6F4EA;color:#13703A;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+.post-g{border:1px solid #EEE;border-radius:12px;padding:12px;font-size:13.5px;display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center}
+.post-g img{width:70px;height:70px;object-fit:cover;border-radius:8px}
+
+/* painel */
+.painel{border:1px solid var(--linha);border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(22,18,29,.14);background:#fff}
+.p-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--linha);flex-wrap:wrap}
+.p-top .m{display:flex;align-items:center;gap:10px;font-weight:700}
+.p-top .m img{height:38px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linha)}
+@media(min-width:900px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.kpi{background:#fff;padding:16px 18px}
+.kpi small{color:var(--cinza);font-size:13px;font-weight:600}
+.kpi b{display:block;font-family:'Bricolage Grotesque';font-size:30px;font-weight:800}
+.kpi span{font-size:12.5px;color:var(--verde);font-weight:600}
+.colunas{display:grid;gap:14px;padding:18px;background:var(--fundo);overflow-x:auto;grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr)}
+.colu h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--cinza);display:flex;justify-content:space-between;margin-bottom:10px}
+.colu h4 b{background:#fff;border:1px solid var(--linha);border-radius:999px;padding:0 9px;color:var(--tinta)}
+.cartao{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:12px;margin-bottom:10px;cursor:pointer;transition:transform .2s, box-shadow .2s;font-size:14px}
+.cartao:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(22,18,29,.08)}
+.cartao .t{display:flex;justify-content:space-between;font-weight:700}
+.cartao .t small{color:var(--cinza);font-weight:600}
+.cartao p{color:var(--cinza);font-size:13.5px;margin:4px 0 8px}
+.chip{display:inline-block;font-size:11.5px;font-weight:700;border-radius:6px;padding:2px 8px;margin-right:4px}
+.c-imp{background:#EEF2FF;color:#3346B5}.c-foto{background:#FDEBF1;color:#B0244F}.c-lista{background:#FFF1E2;color:#A35A12}.c-plas{background:#E9F7F1;color:#167052}.c-cad{background:#F3E8FD;color:#7B1FB0}
+.cartao .acao{font-size:12.5px;font-weight:700;color:var(--orion)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(140%);background:var(--tinta);color:#fff;border-radius:16px;padding:14px 18px;max-width:420px;width:calc(100% - 32px);z-index:60;transition:transform .35s, opacity .35s;opacity:0;visibility:hidden;font-size:14.5px;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.toast.on{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible}
+.toast b{display:block;color:#9DF0BC;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+
+/* fluxo */
+.fluxo{display:grid;gap:12px}
+@media(min-width:960px){.fluxo{grid-template-columns:repeat(5,1fr)}}
+.et{background:#fff;border:1px solid var(--linha);border-radius:20px;padding:20px;position:relative}
+.et .n{font-family:'Bricolage Grotesque';font-weight:800;color:var(--orion);font-size:14px}
+.et h3{font-size:20px;margin:6px 0}
+.et p{color:var(--cinza);font-size:14.5px}
+
+/* video */
+.video-box{display:grid;gap:30px;align-items:center}
+@media(min-width:960px){.video-box{grid-template-columns:auto 1fr}}
+.video-box video{width:300px;border-radius:28px;background:#000;box-shadow:0 30px 60px rgba(22,18,29,.25);margin:0 auto;display:block;aspect-ratio:9/16}
+
+/* fecho */
+.fecho{background:var(--tinta);color:#fff;border-radius:34px;padding:40px 26px;text-align:center;position:relative;overflow:hidden}
+.fecho:before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(173,58,224,.45),transparent 40%),radial-gradient(circle at 80% 90%,rgba(210,55,100,.35),transparent 40%)}
+.fecho>*{position:relative}
+.fecho h2{color:#fff;max-width:760px;margin:0 auto}
+.fecho h2 em{color:#E7B5FF}
+.fecho p{color:#D7CCE3;margin:14px auto 26px;max-width:560px}
+.duplo{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:24px}
+.duplo img{height:84px;width:auto;background:#fff;border-radius:18px;padding:6px}
+.duplo span{font-size:26px;color:#9C8FB0}
+.fazer{display:grid;gap:14px;margin-top:30px;text-align:left}
+@media(min-width:900px){.fazer{grid-template-columns:1fr 1fr}}
+.fazer div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px}
+.fazer h3{font-size:18px;margin-bottom:8px}
+.fazer li{color:#D7CCE3;font-size:15px;margin-left:18px;margin-bottom:4px}
+footer{padding:30px 0 40px;text-align:center;font-size:13px;color:var(--cinza)}
+footer img{height:70px;margin:0 auto 6px}
+
+.surge{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.surge.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.surge{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="wrap">
+    <div class="marca"><img src="assets/logo-colegial.png" alt="Colegial"><span class="x">×</span><img src="assets/logo-orion-clara.png" alt="Orion Digitalize"></div>
+    <nav><a href="#achados">O que vimos</a><a href="#site">Site</a><a href="#google">Google</a><a href="#painel">Painel</a><a href="#video">Vídeo</a></nav>
+    <a class="btn btn-o" id="cta-top" href="#">Falar com a Orion</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="surge">
+      <span class="eyebrow">Apresentação Orion Digitalize · Colegial · 14/11/2026</span>
+      <h1>Colegial Papelaria<small>O site de pedidos, o Google e o painel, em demonstração.</small></h1>
+      <p>Preparado pela Orion para o Flávio e a equipe da Colegial Santa Edwiges Papelaria e Presentes, Alameda Nossa Sra. de Fátima, 284, Cabrais, Oliveira/MG.</p>
+      <div class="acoes">
+        <a class="btn btn-o" href="site/index.html" target="_blank" rel="noopener">Abrir o site novo</a>
+        <a class="btn btn-l" href="#painel">Ver o painel</a>
+      </div>
+      <div class="prep"><img src="assets/logo-orion-clara.png" alt=""><span>Tudo o que aparece aqui foi montado com as fotos, a nota, as avaliações e o catálogo reais da Colegial. O que é simulação está marcado.</span></div>
+    </div>
+    <div class="surge">
+      <div class="cel"><div class="tela"><iframe src="site/index.html" title="Site novo da Colegial no celular" loading="lazy"></iframe></div></div>
+      <div class="cel-leg">O site novo no celular. Pode rolar e tocar.</div>
+    </div>
+  </div>
+</header>
+
+<section class="s" id="achados">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="num">00 · O QUE A GENTE VIU</span>
+      <h2>A parte difícil a Colegial <em>já fez.</em></h2>
+      <p>Antes de montar qualquer coisa, estudamos a loja: Google, Instagram, catálogo do WhatsApp e as 426 avaliações.</p>
+    </div>
+    <div class="achados">
+      <div class="ach surge"><div class="bg">5,0 <small>/ 426</small></div><p>Nota máxima no Google com 426 avaliações. É difícil achar isso em qualquer cidade.</p><span class="fonte">Google, 14/11/2026</span></div>
+      <div class="ach surge"><q>Fiz meu pedido pelo WhatsApp, e quando cheguei, já estava tudo impresso e muito bem organizado.</q><span class="fonte">Avaliação real no Google</span></div>
+      <div class="ach surge"><q>Esse ano tomamos uma decisão importante: nosso foco será ainda maior na prestação de serviços, pra garantir um atendimento mais organizado, ágil.</q><span class="fonte">Post da Colegial, 15/01/2026</span></div>
+      <div class="ach forte surge"><div class="bg" style="color:#fff">0</div><p>site na ficha do Google. E o Instagram, com 3.003 seguidores, está sem post desde 15/01/2026.</p><span class="fonte" style="color:#9C8FB0">Google e Instagram, 14/11/2026</span></div>
+    </div>
+    <div class="leitura surge">O cliente da Colegial <b>já pede pelo WhatsApp e gosta.</b> A loja <b>já decidiu</b> focar em serviço organizado. O que falta é o <b>caminho pronto</b>: o cliente escolhe o serviço, manda o arquivo ou a lista, e o pedido chega organizado, sem ida e volta de mensagem. Com a volta às aulas de 2027 chegando.</div>
+  </div>
+</section>
+
+<section class="s" id="instagram">
+  <div class="wrap duas">
+    <div class="surge">
+      <div class="cel"><div class="tela"><div class="ig">
+        <div class="top"><img src="assets/ig-perfil.jpg" alt=""><div class="nums"><div><b>306</b>posts</div><div><b>3.003</b>seguidores</div><div><b>501</b>seguindo</div></div></div>
+        <div class="bio"><b>Colegial Santa Edwiges Papelaria e Presentes</b><br>Papelaria<br>Brinquedos<br>Artigos pra Casa &amp; Cozinha<br>Compre via whatsApp<br><span class="lk">wa.me/553798342633 e mais 1</span></div>
+        <div class="bts"><span class="az">Seguir</span><span>Mensagem</span></div>
+        <div class="grade"><img src="assets/ig-01.jpg" alt=""><img src="assets/ig-02.jpg" alt=""><img src="assets/ig-03.jpg" alt=""><img src="assets/ig-04.jpg" alt=""><img src="assets/ig-05.jpg" alt=""><img src="assets/ig-06.jpg" alt=""><img src="assets/ig-07.jpg" alt=""><img src="assets/ig-08.jpg" alt=""><img src="assets/ig-09.jpg" alt=""></div>
+      </div></div></div>
+      <div class="cel-leg">@colegialse hoje, com os posts reais</div>
+    </div>
+    <div class="surge">
+      <span class="num">01 · INSTAGRAM</span>
+      <h2>3.003 pessoas já seguem. <em>Falta para onde levar.</em></h2>
+      <p style="color:var(--cinza);margin-top:12px;font-size:18px">Hoje o link da bio abre uma conversa em branco no WhatsApp. Quem chega precisa explicar tudo do zero, e a equipe responde uma pergunta de cada vez.</p>
+      <ul class="lista-ok">
+        <li><i>1</i>O link da bio passa a abrir o site novo, com o pedido de serviço e a lista escolar</li>
+        <li><i>2</i>O pedido chega no WhatsApp da Colegial já escrito: serviço, quantidade, tamanho, retirada ou entrega</li>
+        <li><i>3</i>O mesmo link vai no botão "Site" da ficha do Google</li>
+      </ul>
+      <div class="aviso">O último post é de 15/01/2026, o que anunciou o foco em serviços. O site novo é a forma de cumprir esse anúncio sem depender de postar todo dia.</div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="site">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="num">02 · O SITE NOVO</span>
+      <h2>A Colegial, <em>no celular de quem procura.</em></h2>
+      <p>No ar em demonstração, com as fotos, as avaliações e os preços reais do catálogo do WhatsApp. Os botões funcionam: o pedido abre no WhatsApp da loja já escrito.</p>
+    </div>
+    <div class="site-area">
+      <div class="surge"><div class="cel"><div class="tela"><iframe src="site/index.html" title="Site novo no celular" loading="lazy"></iframe></div></div><div class="cel-leg">No celular</div></div>
+      <div class="surge">
+        <div class="pc"><div class="barra"><i></i><i></i><i></i><span>colegialpapelaria.com.br</span></div><div class="vista" id="vista"><iframe id="ifpc" src="site/index.html" title="Site novo no computador" loading="lazy"></iframe></div></div>
+        <div class="dest">
+          <span>Pedido de impressão e xerox</span><span>Fotos com tamanho escolhido</span><span>Plastificação</span><span>Caderno personalizado</span><span>Lista escolar 2027</span><span>Sacola com preço real</span><span>Avaliações do Google</span><span>Aberto agora</span><span>Como chegar</span>
+        </div>
+        <div class="abrir"><a class="btn btn-o" href="site/index.html" target="_blank" rel="noopener">Abrir o site em tela cheia</a><a class="btn btn-l" href="site/index.html#lista" target="_blank" rel="noopener">Testar a lista escolar</a></div>
+        <p style="color:var(--cinza);font-size:14px;margin-top:14px">O endereço colegialpapelaria.com.br é ilustrativo: o domínio é escolhido com vocês.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="google">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="num">03 · GOOGLE MEU NEGÓCIO</span>
+      <h2>A ficha nota 5 <em>ganha um destino.</em></h2>
+      <p>Vocês já cuidam das avaliações e respondem cada uma. Falta a ficha levar o cliente direto ao pedido.</p>
+    </div>
+    <div class="gg">
+      <div class="ficha surge">
+        <div class="rot"><span>Como está hoje</span><span>conferido em 14/11/2026</span></div>
+        <div class="fotos"><img src="assets/fachada.jpg" alt=""><img src="assets/interior.jpg" alt=""><img src="assets/parede.jpg" alt=""></div>
+        <div class="corpo">
+          <h3>Colegial Santa Edwiges Papelaria e Presentes</h3>
+          <div class="nt">5,0 <span class="e">★★★★★</span> (426)</div>
+          <div class="cat">Papelaria</div>
+          <div class="gbts"><span>Rotas</span><span>Ligar</span><span>Salvar</span><span>Compartilhar</span></div>
+          <div class="gl">
+            <div><b>Endereço</b><span>Alameda Nossa Sra. de Fátima, 284, Cabrais, Oliveira - MG</span></div>
+            <div><b>Horário</b><span>Seg a sex 06:30–18:30 · Sáb 08:00–12:00</span></div>
+            <div><b>Telefone</b><span>(37) 99834-2633</span></div>
+            <div><b>Site</b><span class="falta">Sem site ("Adicionar website")</span></div>
+            <div><b>Fotos</b><span>3 fotos</span></div>
+            <div><b>Novidades</b><span class="falta">Nenhuma publicação</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="ficha nova surge">
+        <div class="rot"><span>Como fica cuidada</span><span class="selo-demo">Exemplo</span></div>
+        <div class="fotos"><img src="assets/interior.jpg" alt=""><img src="assets/flavio-loja.jpg" alt="" style="object-position:center 25%"><img src="assets/parede.jpg" alt=""></div>
+        <div class="corpo">
+          <h3>Colegial Santa Edwiges Papelaria e Presentes</h3>
+          <div class="nt">5,0 <span class="e">★★★★★</span> (426)</div>
+          <div class="cat">Papelaria · Copiadora · Loja de presentes</div>
+          <div class="gbts"><span class="az">Fazer pedido</span><span>Rotas</span><span>Ligar</span><span>Site</span><span>WhatsApp</span></div>
+          <div class="gl">
+            <div><b>Site</b><span class="novo">colegialpapelaria.com.br <span class="tag">novo</span></span></div>
+            <div><b>Pedido</b><span class="novo">impressão, fotos, plastificação e lista escolar pelo site <span class="tag">novo</span></span></div>
+            <div><b>Serviços</b><span>Impressão e xerox · Impressão de fotos · Plastificação · Cadernos personalizados · Lista escolar</span></div>
+            <div><b>Fotos</b><span>álbuns: fachada, balcão, equipe, produtos, trabalhos de impressão</span></div>
+            <div><b>Novidades</b><span><div class="post-g"><img src="assets/ig-08.jpg" alt=""><div><b>Lista escolar 2027</b><br>Mande a foto da lista pelo site e busque tudo separado.</div></div></span></div>
+            <div><b>Perguntas</b><span><b>Vocês imprimem pelo WhatsApp?</b><br>Sim. Escolha o serviço no site, mande o arquivo e retire pronto.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="color:var(--cinza);font-size:13.5px;margin-top:16px">Selo "Exemplo" = simulação. Nota, avaliações, endereço, horário e fotos são os reais da Colegial.</p>
+  </div>
+</section>
+
+<section class="s" id="painel">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="num">04 · PAINEL · DEMONSTRAÇÃO</span>
+      <h2>Cada pedido num lugar, <em>do recebido ao pronto.</em></h2>
+      <p>O pedido que chega pelo site entra aqui. Toque num cartão para andar com ele: quando fica pronto, a mensagem para o cliente já sai escrita.</p>
+    </div>
+    <div class="painel surge">
+      <div class="p-top">
+        <div class="m"><img src="assets/logo-colegial.png" alt=""> Pedidos de hoje</div>
+        <span class="selo-demo">Demonstração · dados fictícios</span>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><small>Pedidos hoje</small><b id="k-hoje">11</b><span>7 vieram pelo site</span></div>
+        <div class="kpi"><small>Listas escolares 2027</small><b>23</b><span>9 já separadas</span></div>
+        <div class="kpi"><small>Prontos para retirar</small><b id="k-pronto">2</b><span>cliente avisado</span></div>
+        <div class="kpi"><small>Entregues hoje</small><b id="k-entregue">4</b><span>2 por entrega</span></div>
+      </div>
+      <div class="colunas" id="colunas"></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="video">
+  <div class="wrap video-box">
+    <div class="surge"><video id="vid" src="video/colegial-previa.mp4" poster="video/capa.jpg" controls playsinline preload="none"></video></div>
+    <div class="surge">
+      <span class="num">05 · EM 1 MINUTO</span>
+      <h2>O trabalho, <em>do começo ao fim.</em></h2>
+      <p style="color:var(--cinza);margin-top:12px;font-size:18px">Um vídeo curto, narrado, com tudo isso em movimento: o que vimos na Colegial, o site, o pedido chegando organizado e o painel.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="tudo">
+  <div class="wrap">
+    <div class="cab surge"><span class="num">TUDO CONECTADO</span><h2>Do Instagram ao <em>pronto para retirar.</em></h2></div>
+    <div class="fluxo">
+      <div class="et surge"><span class="n">1</span><h3>Encontra</h3><p>Pelo Instagram ou pela ficha nota 5 do Google.</p></div>
+      <div class="et surge"><span class="n">2</span><h3>Escolhe</h3><p>No site: o serviço, a lista escolar ou os produtos.</p></div>
+      <div class="et surge"><span class="n">3</span><h3>Pede</h3><p>O pedido chega escrito no WhatsApp da Colegial, com o arquivo em seguida.</p></div>
+      <div class="et surge"><span class="n">4</span><h3>Organiza</h3><p>No painel: recebido, em produção, pronto.</p></div>
+      <div class="et surge"><span class="n">5</span><h3>Retira</h3><p>O cliente é avisado e só passa para buscar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" style="border:0;padding-top:20px">
+  <div class="wrap">
+    <div class="fecho surge">
+      <div class="duplo"><img src="assets/logo-colegial.png" alt="Colegial"><span>×</span><img src="assets/logo-orion-clara.png" alt="Orion"></div>
+      <h2>Vamos colocar o site da Colegial <em>no ar antes da volta às aulas?</em></h2>
+      <p>Uma conversa de 20 minutos pelo Google Meet para mostrar tudo isso funcionando e ajustar ao jeito da loja.</p>
+      <a class="btn btn-z" id="cta-fim" href="#">Marcar a conversa no WhatsApp</a>
+      <div class="fazer">
+        <div><h3>O que fica com a Orion</h3><ul><li>Site, domínio e publicação</li><li>Ficha do Google cuidada e ligada ao site</li><li>Link da bio do Instagram</li><li>Painel de pedidos e treinamento da equipe</li></ul></div>
+        <div><h3>O que precisamos da Colegial</h3><ul><li>Aprovar textos e serviços do site</li><li>Fotos de produtos que quiserem mostrar (podemos fotografar)</li><li>Os preços que quiserem no site</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><img src="assets/logo-orion-clara.png" alt="Orion Digitalize">Orion Digitalize · Arcos/MG · apresentação preparada para a Colegial Papelaria em 14/11/2026</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const ORION = '553784143588';
+const msgOrion = encodeURIComponent('Olá, Orion! Vi a apresentação da Colegial Papelaria e quero marcar a conversa.');
+document.getElementById('cta-top').href = 'https://wa.me/' + ORION + '?text=' + msgOrion;
+document.getElementById('cta-fim').href = 'https://wa.me/' + ORION + '?text=' + msgOrion;
+
+/* site no computador: escala o iframe para a largura da moldura */
+function escalarPC(){ const v=document.getElementById('vista'), f=document.getElementById('ifpc'); const s=v.clientWidth/1366; f.style.transform='scale('+s+')'; v.style.height=Math.round(1100*s*.62)+'px'; }
+addEventListener('resize', escalarPC); escalarPC();
+
+/* painel de demonstração (dados fictícios) */
+const COLS = [['rec','Recebidos'],['prod','Em produção'],['pronto','Pronto para retirar'],['ent','Entregue']];
+const TIPOS = {imp:['Impressão','c-imp'], foto:['Fotos','c-foto'], lista:['Lista escolar','c-lista'], plas:['Plastificação','c-plas'], cad:['Personalizado','c-cad']};
+const P = [
+  {id:1, n:'Ana P.', t:'imp', d:'40 cópias · P&B · A4 · frente e verso', h:'09:12', s:'rec', via:'site'},
+  {id:2, n:'Lucas M.', t:'foto', d:'24 fotos 10x15', h:'09:40', s:'rec', via:'site'},
+  {id:3, n:'Cláudia R.', t:'lista', d:'3º ano · 2 alunos · marcas da lista', h:'10:05', s:'rec', via:'site'},
+  {id:4, n:'Marcos T.', t:'plas', d:'3 documentos', h:'08:30', s:'prod', via:'balcão'},
+  {id:5, n:'Juliana F.', t:'cad', d:'2 cadernos · nome Laura · tema floral', h:'08:02', s:'prod', via:'site'},
+  {id:6, n:'Pedro A.', t:'imp', d:'Apostila 120 págs · colorida · espiral', h:'07:15', s:'pronto', via:'site'},
+  {id:7, n:'Renata S.', t:'lista', d:'1º ano · lista completa', h:'07:02', s:'pronto', via:'site'},
+  {id:8, n:'Helena M.', t:'foto', d:'10 fotos 13x18', h:'06:50', s:'ent', via:'balcão'}
+];
+const prox = {rec:'prod', prod:'pronto', pronto:'ent', ent:'ent'};
+const acao = {rec:'Começar', prod:'Marcar pronto', pronto:'Entregar', ent:'Entregue'};
+function desenhar(){
+  document.getElementById('colunas').innerHTML = COLS.map(([k,nome]) => { const it = P.filter(p=>p.s===k); return `<div class="colu"><h4>${nome}<b>${it.length}</b></h4>${it.map(p=>`<div class="cartao" data-id="${p.id}"><div class="t">${p.n}<small>${p.h}</small></div><p>${p.d}</p><span class="chip ${TIPOS[p.t][1]}">${TIPOS[p.t][0]}</span><span class="chip" style="background:#F2F2F4;color:#5E5868">${p.via}</span><div class="acao" style="margin-top:8px">${p.s==='ent'?'Concluído':acao[p.s]+' →'}</div></div>`).join('')}</div>`; }).join('');
+  document.getElementById('k-pronto').textContent = P.filter(p=>p.s==='pronto').length;
+  document.getElementById('k-entregue').textContent = 3 + P.filter(p=>p.s==='ent').length;
+  document.querySelectorAll('.cartao').forEach(c => c.onclick = () => { const p = P.find(x=>x.id==c.dataset.id); if(p.s==='ent') return; p.s = prox[p.s]; desenhar(); if(p.s==='pronto') toast('Mensagem pronta para ' + p.n.split(' ')[0], 'Oi, ' + p.n.split(' ')[0] + '! Aqui é da Colegial. Seu pedido (' + TIPOS[p.t][0].toLowerCase() + ') já está pronto, pode passar para buscar. Estamos abertos até 18h30.'); if(p.s==='ent') toast('Pedido entregue', p.n + ' · ' + p.d); });
+}
+let tt; function toast(t, m){ const e=document.getElementById('toast'); e.innerHTML='<b>'+t+'</b>'+m; e.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>e.classList.remove('on'), 4200); }
+desenhar();
+
+const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target);} }), {threshold:.1});
+document.querySelectorAll('.surge').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
